@@ -1,17 +1,12 @@
 import { InputContacts } from "./Styled";
-import React, { Component } from "react";
 import PropTypes from "prop-types";
 
-export class Filter extends Component{
+export const Filter=({handleChange, filter})=> {
     
-    render() {
-    const { handleChange, filter } = this.props;
-    // const { filter} = this.props.state;
         return (
             <InputContacts value={filter} onChange={handleChange} />
         );
     }
-};
    
 Filter.propTypes = {
     handleChange: PropTypes.func.isRequired,

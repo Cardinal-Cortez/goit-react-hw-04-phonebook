@@ -1,6 +1,4 @@
 import { Input } from "./Input";
-import { Component } from "react";
-
 
 // export const App = () => {
 //   return (
@@ -20,11 +18,9 @@ import { Component } from "react";
 //     </div>
 //   );
 // };
-export class App extends Component{
+export const App = ({filter}) => {
 
-  render() {
-    return (
-       <Input />   
-    )
-  };
+  return (
+    <Input filter={ filter} />
+  )
 };
